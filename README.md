@@ -1,7 +1,7 @@
 # Guess the number
 
 ## Description
- A simple mini-project at the more basic C++ knowledge level. **Guess the number** is a simple game, which saves the all attempts of player in a text file. The game's goal is to guess a number and keep the high records
+ A simple mini-project at the more basic C++ knowledge level. **Guess the number** is a simple game, which saves all players's attempts in a text file. The game's goal is to guess a number and keep the high scores
  ### Game behavior
 
  1. If the user has entered a number less than the specified one, the hint **_less than_** is displayed. 
@@ -64,7 +64,7 @@
       $ ./guess_number -max 42
    ```
    ### -table
-   Command line parameter with no arguments, with which you can display the high score table immediately, without the need to start the game. 
+   Command line parameter with no arguments, which display the high score table immediately, without the need to start the game. This command can be used together other commands.
    #### Command example:
    ```
       $ ./guess_number -table
@@ -74,6 +74,7 @@
    1. The maximum value is 10 (a guessing range  range from 0 to 9)
    2. The maximum value is 50 (a guessing range from 0 to 49)
    3. The maximum value is 100 (a guessing range  from 0 to 99)
+   commands **_-level_** and **_-max_** can not be used together. You can either specify the level of difficulty, or explicitly set the maximum value.
 
    #### Command example:
    ```
