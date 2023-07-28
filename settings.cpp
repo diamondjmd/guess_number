@@ -12,7 +12,7 @@ void settings::get_parameters (int argc, char **argv, bool &command_show_table, 
     
     bool unknown_command;
     for (int i = 1;  i < argc; i++){
-        bool unknown_command = true;
+        unknown_command = true;
         parameter = argv[i];
 
         if (parameter == "-max"){
